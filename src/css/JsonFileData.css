@@ -1,0 +1,179 @@
+.slick-arrow {
+  background-color: black !important;
+  margin: 0 1rem;
+}
+
+@media (max-width:576px) {
+  .card {
+    width: 70%;
+  }
+
+  .slick-next {
+    right: 0px !important;
+  }
+
+  .slick-prev {
+    left: -19px !important;
+  }
+}
+
+.nav-link,
+.navbar-brand {
+  color: white !important;
+}
+
+.card_height {
+  height: 360px !important;
+}
+
+/* .slick-slide{
+    margin: 0 10px;
+} */
+/* ------------------
+ */
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  box-shadow: 0 0 10px rgb(187 187 187 / 30%);
+  z-index: 2;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  /* opacity: 0; */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.4s linear;
+  cursor: pointer;
+}
+
+.card:hover::after {
+  width: 100%;
+}
+
+.hover-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.29);
+  /* background-color: rgba(20,75,160,.95); */
+  transition: all 0.4s linear;
+  cursor: pointer;
+  /* display: none; */
+}
+
+.hover-text:hover::after {
+  opacity: 1;
+  z-index: 60;
+  /* display: block; */
+}
+
+.hover-text .name {
+  opacity: 0;
+  /* display: none; */
+  z-index: 90;
+  color: white;
+
+  font-size: 16px;
+  position: absolute;
+  top: 40%;
+  right: 0%;
+  transform: translate(50%, -50%);
+  color: white;
+  transition: all 0.5s ease;
+  font-weight: 600;
+  /* color: red; */
+  display: inline-block;
+  /* display: none; */
+  /* opacity: 1; */
+}
+
+.hover-text:hover .name {
+  /* display: block;
+  
+  /* display: inline; */
+  /* left: 50%; */
+  /* display: inline-block; */
+  opacity: 1;
+  right: 50%;
+}
+
+/* .hover-text .name::after{
+  content: "Ausbiz";
+   width: 50%;
+   color: white;
+   position: absolute;
+   top: 40%;
+   left: 0%;
+   transform: translate(-50%,50%);
+   opacity: 0;
+   transition: all 0.5s;
+   font-weight: 600;
+   } */
+.hover-text .cta::after {
+  content: "View Case Study";
+  /* width: 50%; */
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 41%;
+  /* right: 0%;
+    */
+  left: 0%;
+  transform: translate(-50%, 50%);
+  opacity: 0;
+  transition: all 0.5s ease;
+  font-weight: 600;
+}
+
+/* .hover-text:hover .name::after{
+    opacity: 1;
+    z-index: 50;
+    left: 50%;
+   } */
+.hover-text:hover .cta::after {
+  opacity: 1;
+  z-index: 90;
+  /* right: 50%; */
+  left: 50%;
+}
+
+img {
+  max-width: 90%;
+  margin-top: 1.5rem;
+  height: 20rem;
+  transition: all 0.2s linear;
+}
+
+
+/* --------------header------------ */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  height: 2px;
+  width: 0%;
+  /* transform: translate(-50%,50%); */
+  background-color: rgba(20, 75, 160, .95);
+  transition: all 0.5s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+@media (max-width:990px) {}

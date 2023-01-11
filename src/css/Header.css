@@ -1,0 +1,13 @@
+.nav_header{
+  background-color: #764abc;
+  color: white;
+}
+.header_navbar{
+  display: none !important;
+}
+@media (max-width:700px){
+
+  .header_navbar{
+      display: block !important;
+  }
+}

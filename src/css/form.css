@@ -1,0 +1,88 @@
+.grid_container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: #EFEDEE !important;
+}
+
+.main_container {
+  height: 100%;
+  width: 100%;
+  /* text-align: center; */
+}
+
+@media screen and (max-width:600px) {
+  .grid_container {
+    background-color: white !important;
+  }
+}
+
+.sigin_input {
+  height: 31px !important;
+}
+
+.field_label {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 400;
+  margin-bottom: 0rem !important;
+}
+
+@media screen and (max-width:600px) {
+  .form_container {
+    border: none;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.container_field {
+  margin-bottom: 12px;
+}
+
+.container_field_password {
+  margin-bottom: 24px;
+}
+
+.margin_content_password {
+  margin-bottom: 0px;
+}
+
+.margin_content {
+  margin-bottom: 0px;
+}
+
+.input_box {
+  border-color: rgb(229 231 235) !important;
+  background-color: rgba(212, 213, 216, 0.2) !important;
+}
+
+.input_box2 {
+  border-color: rgb(229 231 235) !important;
+  background-color: rgba(212, 213, 216, 0.2) !important;
+}
+
+.input_box:focus {
+  box-shadow: none !important;
+  background-color: rgb(229 231 235) !important;
+}
+
+.input_range {
+  width: 100%;
+  background-color: transparent;
+  margin-top: -0.4rem;
+}
+
+.hobbies {
+  margin-top: -13px;
+}
+
+.submit_btn {
+  width: 25%;
+  margin-top: -0.2rem;
+  /* margin-bottom: 0.4rem; */
+}
+
+.warning_errors {
+  font-size: 0.5rem;
+  color: #421302;
+  margin-bottom: 0rem;
+}
